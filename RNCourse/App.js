@@ -22,23 +22,22 @@ export default function App() {
   };
 
   return (
-    // <View style={styles.appContainer}>
-    //   <GoalInput onAddGoal={addGoalHandler} />
+    <View style={styles.appContainer}>
+      <GoalInput onAddGoal={addGoalHandler} />
 
-    //   <View style={styles.goalsContainer}>
-    //     <FlatList
-    //       data={courseGoals}
-    //       renderItem={(itemData) => {
-    //         return <GoalItem text={itemData.item.text} />;
-    //       }}
-    //       keyExtractor={(item, index) => {
-    //         return item.id;
-    //       }}
-    //       alwaysBounceVertical={false}
-    //     />
-    //   </View>
-    // </View>
-    <Text>Hi</Text>
+      <View style={styles.goalsContainer}>
+        <FlatList
+          data={courseGoals}
+          renderItem={(itemData) => {
+            return <GoalItem text={itemData.item.text} />;
+          }}
+          keyExtractor={(item, index) => {
+            return item.id;
+          }}
+          alwaysBounceVertical={false}
+        />
+      </View>
+    </View>
   );
 }
 
