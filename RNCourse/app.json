@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "RNCourse",
-    "slug": "RNCourse",
+    "slug": "goalsapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -16,7 +16,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.javierneoh.goalsapp"
     },
     "android": {
       "adaptiveIcon": {
@@ -26,6 +27,18 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "99ecc63a-a16a-48eb-a13b-0db0c108253a"
+      }
+    },
+    "owner": "javierneoh",
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/99ecc63a-a16a-48eb-a13b-0db0c108253a"
     }
   }
 }
